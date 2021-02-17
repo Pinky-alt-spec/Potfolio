@@ -228,6 +228,12 @@
     						<li class="active">Contact Me</li>
     					</ol>
     				</div>
+					{% if contact_email %}
+						<div style="text-align: center; margin-top: 12%">
+							<h3>Thank You For Getting Back to Me "{{ contact_email }}"</h3><br />
+							<h4>I have received your email and will respond shortly...</h4>
+						</div>
+					{% else %}
     				<div class="row">
     					<div class="container">
     						<div class="row modulesTitle">
@@ -263,12 +269,6 @@
     										</li>
     									</ul>
     								</div>
-									{% if contact_email %}
-										<center>
-											<h3>Thank You {{ contact_name }}</h3>
-											<p>I have received your email and will respond shortly.</p>
-										</center>
-									{% else %}
     								<form method="POST" action="{% url 'contact' %}">
     									{% csrf_token %}
                                         <div class="col-md-12">
@@ -288,11 +288,11 @@
                                             <h6>Ps: I don't bite</h6>
     									</div>
     								</form>
-									{% endif %}
     							</div>
     						</div>
     					</div>
     				</div>
+					{% endif %}
     			</section>
     		</div>
     		<footer class="global_footer footer_1">

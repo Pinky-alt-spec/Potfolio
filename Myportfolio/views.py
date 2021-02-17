@@ -59,15 +59,24 @@ def softwareDev(request):
 
 
 def contact(request):
-        if request.method == 'POST':
-            message = request.POST['contact_message']
-            emails = request.POST['contact_email']
-            send_mail(emails,
-                      message,
-                      settings.EMAIL_HOST_USER,
-                      ['pinkymononyane@gmail.com'],
-                      fail_silently=True)
-        return render(request, 'Myportfolio/contact-me.html')
+    # grab the information filled by the user
+    if request.method == 'POST':
+        contact_message = request.POST['contact_message']
+        contact_email = request.POST['contact_email']
+        # send an email
+        send_mail(
+            contact_email,
+            contact_message,
+            settings.EMAIL_HOST_USER,
+            ['pinkymononyane@gmail.com'],  # To email
+            fail_silently=False
+            )
+
+        return render(request, 'Myportfolio/contact-me.html', {'contact_email': contact_email})
+    else:
+        return render(request, 'Myportfolio/contact-me.html', {})
+
+
 
 
 

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
 
-<html dir="ltr" lang="en" class=" home_page home_page_design s_layout1 isFreePackage  ">
+<html dir="ltr" lang="en" class=" home_page home_page_design s_layout1 isFreePackage  "
+      xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +31,7 @@
         <!-- Mobile Browser Address Bar Color -->
 		<meta name="theme-color" content="#bc9c22">
         <!-- Regular Meta Info -->
-		<title class="s123-js-pjax">Get To Know Me </title>
+		<title class="s123-js-pjax">Pinks {*_*} </title>
 		<meta name="description" content="MyPortfolio - Pinky Mononyane" class="s123-js-pjax">
 		<meta name="keywords" content="" class="s123-js-pjax">
 		<link rel="canonical" href="index.html" class="s123-js-pjax"/>
@@ -1244,13 +1245,13 @@
 			</div>
 		</section>
         <!--Contact Me-->
-        {% if contact_name %}
-            <center>
-                <h3>Thank You {{ contact_name }}</h3>
-                <p>I have received your email and will respond shortly.</p>
-            </center>
-        {% else %}
-		<section id="section-56f3eb72d83fa" class="s123-module s123-module-contact layout-7">
+			{% if contact_email %}
+			<div style="text-align: center; margin-top: 12%">
+				<h3>Thank You For Getting Back to Me "{{ contact_email }}"</h3><br />
+				<p>I have received your email and will respond shortly.</p>
+			</div>
+			{% else %}
+		<div id="section-56f3eb72d83fa" class="s123-module s123-module-contact layout-7">
 			<div data-aos="fade-up" class="container-fluid page_header_style page_header_style_">
 				<div class="row">
 					<div class="container">
@@ -1282,10 +1283,11 @@
 									</li>
 									<li>
 										<a href="mailto:pinkymononyane@gmail.com">
-											<i class="fa fa-envelope-o fa-fw"></i>pinkymononyane@gmail.com</a>
-										</li>
-									</ul>
-								</div>
+											<i class="fa fa-envelope-o fa-fw"></i>pinkymononyane@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 								<form method="POST" action="{% url 'contact' %}">
                                     {% csrf_token %}
                                     <div class="col-md-12">
@@ -1309,8 +1311,8 @@
 						</div>
 					</div>
 				</div>
-			</section>
-        {% endif %}
+			{% endif %}
+            </section>
 		</div>
 		<footer class="global_footer footer_1">
 			<div class="container">
