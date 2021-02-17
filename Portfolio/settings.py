@@ -26,7 +26,7 @@ SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com']
 #Gmail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -64,7 +64,11 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR), 'templates'],
+=======
+        'DIRS': [os.path.join(BASE_DIR), 'C:\Users\PINKY\PycharmProjects\Portfolio\Myportfolio\templates'],
+>>>>>>> fce5bfdf80785a3d1a5ae6fc76dcce2912261f51
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,6 +132,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import django_heroku
+django_heroku.settings(locals())
 
 
 
