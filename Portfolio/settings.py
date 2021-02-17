@@ -26,7 +26,7 @@ SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com']
 #Gmail
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
