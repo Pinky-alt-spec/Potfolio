@@ -64,7 +64,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR),"templates"],
+        'DIRS': [r'C:\Users\PINKY\PycharmProjects\Portfolio\Myportfolio\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
