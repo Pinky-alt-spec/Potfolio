@@ -27,13 +27,19 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com']
-#Gmail
+
+#### for mail
+# myaccount.google.com/apppasswords
+# accounts.google.com/DisplayUnlockCaptcha
+# myaccount.google.com/lesssecureapps
+### Email Settings Start ###
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pinkymononyane@gmail.com'
-EMAIL_HOST_PASSWORD = 'Jesus@1234#'
+EMAIL_HOST_PASSWORD = 'Pinky@mononyane!'
 
 
 # Application definition
@@ -64,11 +70,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
         'DIRS': [os.path.join(BASE_DIR), 'templates'],
-=======
-        'DIRS': [os.path.join(BASE_DIR), 'C:\Users\PINKY\PycharmProjects\Portfolio\Myportfolio\templates'],
->>>>>>> fce5bfdf80785a3d1a5ae6fc76dcce2912261f51
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
