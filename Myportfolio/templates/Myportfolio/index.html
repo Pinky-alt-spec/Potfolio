@@ -1084,7 +1084,6 @@
     					<div class="col-md-3 col-sm-6 col-centered" style="margin-top:-85px">
     						<div class="service-item">
 	    						<span class="fa-stack fa-4x" data-bg="">
-
 	    						</span>
 	    						<a href="https://pinks-todos.herokuapp.com/" target="popup" onclick="window.open('https://pinks-todos.herokuapp.com/')">
 	            					<img src=" {% static 'Myportfolio/img/Todo.jpg' %}" width="210" height="120">
@@ -1110,10 +1109,9 @@
 									<strong>Dentist Website</strong>
 								</h4>
 									<p>Enables patients to stay informed, set appointments, contact the doctor or/and staff. </p>
-									<a class="services-more-link btn btn-primary" href="{% url 'dentist' %}">Learn More</a>
+									<a href="{% url 'dentist' %}" class="services-more-link btn btn-primary">Learn More</a>
 							</div>
 						</div>
-						<!--Start Project Content-->
 		    			<div class="col-md-3 col-sm-6 col-centered" style="margin-top:-85px">
 		    				<div class="service-item">
 	    						<span class="fa-stack fa-4x" data-bg=""></span>
@@ -1156,12 +1154,12 @@
 									<strong>Weather App</strong>
 								</h4>
 								<p>An app that forecasts current weather for any city via OpenWeather API </p>
-								<a href="{% url 'weather' %}" class="servcies-more-link btn btn-primary">Learn More</a>
+								<a href="{% url 'weather' %}" class="services-more-link btn btn-primary">Learn More</a>
 							</div>
 						</div>
     				</div>
     			</div>
-            <!--End Start Project Content-->
+            <!--End Project Content-->
             </section>
             <!--Education & Experience-->
 			<section id="section-5b3213745ea10" class="s123-module s123-module-timeline bg-primary" style="background-color: #d1d1d1">
@@ -1188,9 +1186,9 @@
 						<div class="cd-timeline-content box-primary s123-box-bottom-primary-border s123-box-padding">
 							<h2>Bsc. Computer Science</h2>
                             <p>I am <strong>currently</strong> enrolled at UNISA for Bsc. Computer Science.</p>
-							<a href="{% url 'Bcs' %}"class="cd-read-more btn btn-primary">Learn More
+							<a href="{% url 'Bcs' %}" class="cd-read-more btn btn-primary">Learn More
 							</a>
-							<span class="cd-date">Sep 01,&nbsp;2020</span>
+							<span class="cd-date">Feb 18,&nbsp;2021</span>
 						</div>
                     </div>
                         <div class="cd-timeline-block">
@@ -1202,10 +1200,10 @@
 						<div class="cd-timeline-content box-primary s123-box-bottom-primary-border s123-box-padding">
 							<h2>Diploma : Information Technology</h2>
 							<p>Completed 2018</p>
-							<a href="{% url 'IT-Diploma' %}"class="cd-read-more btn btn-primary">
+							<a href="{% url 'IT-Diploma' %}" class="cd-read-more btn btn-primary">
 							Learn More
 							</a>
-							<span class="cd-date">Nov&nbsp;26,&nbsp;2018</span>
+							<span class="cd-date">Sep&nbsp;26,&nbsp;2018</span>
 						</div>
 					</div>
                     <div class="cd-timeline-block">
