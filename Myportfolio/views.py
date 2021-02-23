@@ -5,58 +5,58 @@ from django.conf import settings
 
 
 def index(request):
-    return render(request, 'Myportfolio/index.html ')
+    return render(request, 'Myportfolio/index.html')
 
 def about(request):
-    return render(request, 'Myportfolio/about-me.html ')
+    return render(request, 'Myportfolio/about-me.html')
 
 
 def projects(request):
-    return render(request, 'Myportfolio/my-projects.html ')
+    return render(request, 'Myportfolio/my-projects.html')
 
 
 def edu_Exp(request):
-    return render(request, 'Myportfolio/education-experience-1.html ')
+    return render(request, 'Myportfolio/education-experience-1.html')
 
 
 def todo(request):
-    return render(request, 'Myportfolio/my-projects/todo.html ')
+    return render(request, 'Myportfolio/my-projects/todo.html')
 
 
 def weather(request):
-    return render(request, 'Myportfolio/my-projects/weather.html ')
+    return render(request, 'Myportfolio/my-projects/weather.html')
 
 
 def dentist(request):
-    return render(request, 'Myportfolio/my-projects/dentist.html ')
+    return render(request, 'Myportfolio/my-projects/dentist.html')
 
 
 def poll(request):
-    return render(request, 'Myportfolio/my-projects/poll.html ')
+    return render(request, 'Myportfolio/my-projects/poll.html')
 
 
 def ecommerce(request):
-    return render(request, 'Myportfolio/my-projects/ecommerce.html ')
+    return render(request, 'Myportfolio/my-projects/ecommerce.html')
 
 
 def bscCS(request):
-    return render(request, 'Myportfolio/education-experience-1/BscCS.html ')
+    return render(request, 'Myportfolio/education-experience-1/BscCS.html')
 
 
 def dataDev(request):
-    return render(request, 'Myportfolio/education-experience-1/data-developer.html ')
+    return render(request, 'Myportfolio/education-experience-1/data-developer.html')
 
 
 def diploma(request):
-    return render(request, 'Myportfolio/education-experience-1/IT-Diploma.html ')
+    return render(request, 'Myportfolio/education-experience-1/IT-Diploma.html')
 
 
 def intern(request):
-    return render(request, 'Myportfolio/education-experience-1/it-intern.html ')
+    return render(request, 'Myportfolio/education-experience-1/it-intern.html')
 
 
 def softwareDev(request):
-    return render(request, 'Myportfolio/education-experience-1/SoftwareDeveloper.html ')
+    return render(request, 'Myportfolio/education-experience-1/SoftwareDeveloper.html')
 
 
 def contact(request):
