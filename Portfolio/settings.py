@@ -39,7 +39,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pinkymononyane@gmail.com'
-EMAIL_HOST_PASSWORD = 'Pinky@mononyane!'
+EMAIL_HOST_PASSWORD = 'pinky@1Mononyane'
 
 
 # Application definition
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
