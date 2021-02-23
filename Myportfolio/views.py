@@ -5,7 +5,8 @@ from django.conf import settings
 
 
 def index(request):
-    return render(request, 'Myportfolio/index.html')
+    pass
+    # return render(request, 'Myportfolio/index.html')
 
 def about(request):
     return render(request, 'Myportfolio/about-me.html')
