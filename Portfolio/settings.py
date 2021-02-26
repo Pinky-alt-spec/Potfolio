@@ -26,7 +26,7 @@ SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com', 'www.pinkymononyane.info', 'pinkymononyane.info']
 
 #### for mail
 # myaccount.google.com/apppasswords
