@@ -42,21 +42,6 @@ EMAIL_HOST_USER = 'pinkymononyane@gmail.com'
 EMAIL_HOST_PASSWORD = 'Mma!Tshegofatso@Pinky#Lebo$'
 
 
-# S3 BUCKET CONFIG
-
-AWS_ACCESS_KEY_ID = 'AKIAQ5RPYST2GM76NCVP'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'pinks-bucket'
-
-AWS_S3_FILE_OVERRIDE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3ManifestStaticStorage'
-
-
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
