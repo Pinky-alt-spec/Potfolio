@@ -31,6 +31,9 @@ ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com', 'www.pinkymononyane
 ### 5 apps domain name and DNS
 # https://my.freenom.com/clientarea.php?managedns=mazinyo.ml&domainid=1110673765
 
+### Captcha verifivation
+# https://techrfour.com/
+
 #### for mail
 # myaccount.google.com/apppasswords
 # accounts.google.com/DisplayUnlockCaptcha
