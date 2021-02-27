@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com', 'www.pinkymononyane.info', 'pinkymononyane.info']
@@ -42,6 +42,21 @@ EMAIL_HOST_USER = 'pinkymononyane@gmail.com'
 EMAIL_HOST_PASSWORD = 'Mma!Tshegofatso@Pinky#Lebo$'
 
 
+# S3 BUCKET CONFIG
+
+AWS_ACCESS_KEY_ID = 'AKIAQ5RPYST2GM76NCVP'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'pinks-bucket'
+
+AWS_S3_FILE_OVERRIDE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3ManifestStaticStorage'
+
+
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -52,6 +67,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Myportfolio',
+
+    'storages',
 ]
 
 MIDDLEWARE = [
