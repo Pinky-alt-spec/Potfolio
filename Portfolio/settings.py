@@ -23,10 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com', 'www.pinkymononyane.info', 'pinkymononyane.info']
+
+### 5 apps domain name and DNS
+# https://my.freenom.com/clientarea.php?managedns=mazinyo.ml&domainid=1110673765
 
 #### for mail
 # myaccount.google.com/apppasswords
