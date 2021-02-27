@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ka#grdert*)3q1pe%*$z=m#+=l2x-gtdyt%s3+vpvlzwi5&5(x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1','pinkymononyane.herokuapp.com', 'www.pinkymononyane.info', 'pinkymononyane.info']
@@ -45,6 +45,7 @@ EMAIL_HOST_PASSWORD = 'Mma!Tshegofatso@Pinky#Lebo$'
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,15 +135,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'app/static'),
-    os.path.join(BASE_DIR, 'media'),
-]
-
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
-MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+VENV_PATH = os.path.dirname(BASE_DIR)
+STATIC_ROOT = os.path.join(VENV_PATH, 'static_root')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_URL = '/img/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
+#
+#
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 
 
 
