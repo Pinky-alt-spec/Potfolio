@@ -228,10 +228,10 @@
     						<li class="active">Contact Me</li>
     					</ol>
     				</div>
-					{% if contact_email %}
+					{% if contact_name %}
 						<div style="text-align: center; margin-top: 12%">
-							<h3>Thanks  {{ contact_email }}!</h3><br />
-							<h4>I have received your email and will respond shortly...</h4>
+							<h2>Thank You <br> {{ contact_name }}!</h2><br />
+							<h4>I have received your email and will respond shortly.</h4>
 						</div>
 					{% else %}
     				<div class="row">
@@ -272,6 +272,13 @@
     								<form method="POST" action="{% url 'contact' %}">
     									{% csrf_token %}
                                         <div class="col-md-12">
+											<div class="row">
+    											<div class="col-md-12">
+    												<div class="form-group">
+    													<input type="text" name="contact_name" placeholder="Full Name" class="form-control s123-force-ltr" required data-msg-required="This field is required.">
+    												</div>
+    											</div>
+    										</div>
     										<div class="row">
     											<div class="col-md-12">
     												<div class="form-group">
